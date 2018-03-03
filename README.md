@@ -16,5 +16,5 @@ Ad | Soyad | Rolü
 Selin | Gök | Takım Lideri
 Umut | Irmaksever | Takım Lideri Yrd.
 Berkay | Ergün | Geliştirici
-Hasan | Tozkar | Geliştirici
+Hasan | Toskar | Geliştirici
 Azime | Deniz | Testçi
