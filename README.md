@@ -19,6 +19,7 @@ kullanıcıya sadece mevcut yemek tariflerinden elindeki malzemelerle yapabilece
 * Ezoterik yemek tarifi dili olan Chef'in bir yemek tarifinin yapısı olması amacıyla projeye entegrasyonu (Daha fazlası için bakınız: 
 http://progopedia.com/language/chef/
 https://github.com/nikhilm/preserve
+* Ortalama tarif maliyeti
 
 # Takım
 Ad | Soyad | Rolü
