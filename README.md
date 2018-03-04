@@ -11,9 +11,8 @@ kullanıcıya sadece mevcut yemek tariflerinden elindeki malzemelerle yapabilece
 * Her kategorideki tariflerin listelendiği sayfa
 * Kullanıcının sahip olduğu öğelerle tarifin gerektirdiği öğelerin karşılaştırılması, eksik materyallerin kullanıcıya       bildirilmesi
 
-##(BU özellikler ekip arasında tartışma konusudur)
-# Olası Gelecek Özellikler
-* Eksik materyallerin çevrimiçi marketlerden siparişleri
+# Olası Diğer Özellikler
+* Eksik materyallerin çevrimiçi marketlerden sipariş edilebilme özelliği
 * Kullanıcıların tamamladıkları tariflere göre badge kazanmaları (Gamification)
 * Kullanıcıların birbirlerine yemek satabilmeleri, paylaşabilmeleri
 * Ezoterik yemek tarifi dili olan Chef'in bir yemek tarifinin yapısı olması amacıyla projeye entegrasyonu (Daha fazlası için bakınız: 
