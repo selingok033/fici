@@ -6,4 +6,50 @@
     android:layout_height="match_parent"
     tools:context="gok.selin.fici.LoginActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_above="@+id/editTextPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        app:srcCompat="@drawable/fici" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_marginTop="215dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextUsername"
+        android:layout_alignStart="@+id/editTextUsername"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonGiris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Giriş" />
+
+
+
+
+
 </RelativeLayout>
