@@ -13,6 +13,7 @@
         android:layout_above="@+id/editTextPass"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="29dp"
+        android:cropToPadding="false"
         app:srcCompat="@drawable/fici" />
 
     <EditText
@@ -43,9 +44,19 @@
         android:id="@+id/buttonGiris"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
         android:layout_below="@+id/editTextPass"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
-        android:text="Giriş" />
+        android:layout_marginTop="18dp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonGiris"
+        android:layout_alignEnd="@+id/editTextPass"
+        android:layout_alignRight="@+id/editTextPass"
+        android:text="Register" />
 
 </RelativeLayout>

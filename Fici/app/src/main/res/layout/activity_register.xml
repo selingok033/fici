@@ -30,6 +30,18 @@
         android:inputType="textPersonName" />
 
     <EditText
+        android:id="@+id/editTextPass1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextNickname"
+        android:layout_alignLeft="@+id/editTextPass"
+        android:layout_alignStart="@+id/editTextPass"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Againpassword"
+        android:inputType="textPersonName" />
+
+    <EditText
         android:id="@+id/editTextNickname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,18 +63,6 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress" />
-
-    <EditText
-        android:id="@+id/editTextPass1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editTextNickname"
-        android:layout_alignLeft="@+id/editTextPass"
-        android:layout_alignStart="@+id/editTextPass"
-        android:layout_marginBottom="21dp"
-        android:ems="10"
-        android:hint="Againpassword"
-        android:inputType="textPersonName" />
 
     <RadioGroup
         android:id="@+id/RadioGroup"

@@ -20,7 +20,7 @@ lazım. Bunu Intent ile yapacaksın. Web'te "başka bir activity başlatmak" diy
 public class LoginActivity extends AppCompatActivity {
     ImageView logo;
     EditText name,pass;
-    Button buttongiris;
+    Button buttongiris,buttonregister;
     String username,userpass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         name = findViewById(R.id.editTextUsername);
         pass = findViewById(R.id.editTextPass);
         buttongiris =findViewById(R.id.buttonGiris);
+        buttonregister =findViewById(R.id.buttonRegister);
 
         buttongiris.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +51,23 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+
+        buttonregister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                {
+                    Intent intent = new Intent(getApplicationContext(),RegisterActivity.class);
+                    //intent.putExtra("USERNAME",username);
+                    startActivity(intent);
+                }
+
+
+            }
+        });
+
+
+
 
     }
 }

@@ -1,5 +1,6 @@
 package gok.selin.fici;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,27 +23,29 @@ NOT: Radio button kullanmak için onları bir radio group içerisine koyman gere
 
 public class RegisterActivity extends AppCompatActivity {
 
-    EditText name, pass, pass1, email;
+    EditText name, pass, pass1, email,nickname;
     Button buttonnext;
-    String username, userpass, userpass1, useremail;
+    String username, userpass, userpass1,useremail,usernickname;
     RadioButton r1,r2;
     RadioGroup rg1;
     CheckBox c1;
-    //checkpoint tanımlama
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        r1=(RadioButton)findViewById(R.id.radioButton);
-        r2=(RadioButton)findViewById(R.id.radioButton1);
-        rg1=(RadioGroup)findViewById(R.id.RadioGroup);
-        c1=(CheckBox) findViewById(R.id.checkBox);
+        r1=findViewById(R.id.radioButton);
+        r2=findViewById(R.id.radioButton1);
+        rg1=findViewById(R.id.RadioGroup);
+        c1=findViewById(R.id.checkBox);
         name = findViewById(R.id.editTextUsername);
         pass = findViewById(R.id.editTextPass);
         pass1 = findViewById(R.id.editTextPass1);
         buttonnext = findViewById(R.id.button);
+        nickname = findViewById(R.id.editTextNickname);
+        email = findViewById(R.id.editTextemail);
 
         buttonnext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,15 +54,23 @@ public class RegisterActivity extends AppCompatActivity {
                 userpass = pass.getText().toString();
                 userpass1 = pass1.getText().toString();
                 useremail = email.getText().toString();
-                Toast.makeText(getApplicationContext(), "Name: " + username + "Pass1: " + pass1 + "Useremail: " + useremail + " Pass: " + userpass, Toast.LENGTH_LONG).show();
+                usernickname = nickname.getText().toString();
+                //Toast.makeText(getApplicationContext(), "Name: " + username + "Pass1: " + pass1 + "Useremail: " + email +"Nickname: "+nickname+ " Pass: " + userpass, Toast.LENGTH_LONG).show();
 
-                if (userpass.equals("Pass1") && userpass1.equals("Pass")) {
+                if (userpass.equals(userpass1)) {
                     if(c1.isChecked()) {
-                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                         intent.putExtra("USERNAME", username);
                         startActivity(intent);
                     }
+                    else {
+
+                        Toast.makeText(RegisterActivity.this, "Kullanıcı sözlesmesini onaylayınız", Toast.LENGTH_SHORT).show();
+                    }
                 }
+                else
+                    Toast.makeText(RegisterActivity.this, "Şifreler uyuşmuyor", Toast.LENGTH_SHORT).show();
+
 
             }
 
