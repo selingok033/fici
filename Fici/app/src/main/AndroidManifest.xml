@@ -19,7 +19,10 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".CategoriesActivity" />
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".CorbalarActivity" />
+        <activity android:name=".EtActivity" />
+        <activity android:name=".TatliActivity"></activity>
     </application>
 
 </manifest>
