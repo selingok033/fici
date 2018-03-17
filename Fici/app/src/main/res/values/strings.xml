@@ -1,4 +1,26 @@
 <resources>
     <string name="app_name">FIÇI</string>
     <string name="title_activity_login">LoginActivity</string>
+
+    <string-array name="ingredients">
+        <item>Cucumber</item>
+        <item>Eggplant</item>
+        <item>Egg</item>
+        <item>Oil</item>
+        <item>Yoghurt</item>
+        <item>Salt</item>
+        <item>Milk</item>
+        <item>Butter</item>
+        <item>Chicken</item>
+        <item>Fish</item>
+        <item>Steak</item>
+    </string-array>
+    <string-array name="equipment">
+        <item>Oven</item>
+        <item>Bonfire</item>
+        <item>Toaster (Cylon Type)</item>
+        <item>Kettle</item>
+        <item>Cooker</item>
+        <item>Grill</item>
+    </string-array>
 </resources>
