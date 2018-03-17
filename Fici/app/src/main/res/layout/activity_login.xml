@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="gok.selin.fici.LoginActivity">
 
-    <ImageView
+    <com.github.siyamed.shapeimageview.CircularImageView
         android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="300dp"
-        android:layout_above="@+id/editTextPass"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="29dp"
-        android:cropToPadding="false"
-        app:srcCompat="@drawable/fici" />
+        android:src="@drawable/fici"
+        app:siBorderColor="@color/colorPrimaryDark"
+        app:siBorderWidth="6dp" />
+
 
     <EditText
         android:id="@+id/editTextUsername"
@@ -48,7 +50,9 @@
         android:layout_alignStart="@+id/imageView"
         android:layout_below="@+id/editTextPass"
         android:layout_marginTop="18dp"
-        android:text="Login" />
+        android:background="@android:color/darker_gray"
+        android:text="Login"
+        android:textColorLink="@android:color/darker_gray" />
 
     <Button
         android:id="@+id/buttonRegister"
@@ -57,6 +61,7 @@
         android:layout_alignBottom="@+id/buttonGiris"
         android:layout_alignEnd="@+id/editTextPass"
         android:layout_alignRight="@+id/editTextPass"
-        android:text="Register" />
+        android:background="@android:color/darker_gray"
+        android:text="Regıster" />
 
 </RelativeLayout>

@@ -1,6 +1,5 @@
 package gok.selin.fici;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -33,6 +32,8 @@ public class LoginActivity extends AppCompatActivity {
         pass = findViewById(R.id.editTextPass);
         buttongiris =findViewById(R.id.buttonGiris);
         buttonregister =findViewById(R.id.buttonRegister);
+
+
 
         buttongiris.setOnClickListener(new View.OnClickListener() {
             @Override
