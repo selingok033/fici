@@ -8,12 +8,12 @@ kullanıcıya sadece mevcut yemek tariflerinden elindeki malzemelerle yapabilece
 * [x] Uygulamaya kayıt olma ekranı @BerkayErgunn
 * [ ] Kullanıcının profil ekranı @uirmaksever
 * [x] Yemek kategorilerinin listelendiği sayfa @Hasan
-* [ ] Her kategorideki tariflerin listelendiği sayfa
+* [ ] Her kategorideki tariflerin listelendiği sayfa @selingok033 @Hasan
 * [ ] Kullanıcının sahip olduğu öğelerle tarifin gerektirdiği öğelerin karşılaştırılması, eksik materyallerin kullanıcıya bildirilmesi
 
-Takım üyeleri birel olarak kendilerine atanan görevlerdeki aktiviteleri tasarlamaya başladı ve çoğunluğu bitirdi. Ana projeyi @selingok033 master branch'e pushladı ve herkes kendi workspace'inde çalışman için dev kanalından birer branch çıktı (Projenin branch treesini aşağıda bulabilirsiniz.). Geldiğimiz aşamada projenin backendi henüz yazılmadı, yahut tasarlanan aktiviteler ilişkilendirilip erken seviyede bir prototip henüz çıkmadı.
+Takım üyeleri bireysel olarak kendilerine atanan görevlerdeki aktiviteleri tasarlamaya başladı ve çoğunluğu bitirdi. Ana projeyi @selingok033 master branch'e pushladı ve herkes kendi workspace'inde çalışmak için dev kanalından birer branch çıktı (Projenin branch treesini aşağıda bulabilirsiniz.). Geldiğimiz aşamada projenin backendi henüz yazılmadı ancak tasarlanan aktiviteler ilişkilendirildi.
 
-#Branch Tree
+# Branch Tree
 
 ```
 $ git log --graph --decorate --oneline --all
