@@ -2,9 +2,11 @@ package gok.selin.fici;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatDelegate;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /*
@@ -16,7 +18,10 @@ eklersen güzel olabilir.
 
 public class ProfileActivity extends AppCompatActivity {
 
-    List ingredients = new ArrayList<>(R.array.ingredients);
+//    List ingredients = new ArrayList<>(R.array.ingredients);
+//    List<String> ingredients = Arrays.asList(getResources().getStringArray(R.array.ingredients));
+
+    List<CustomIngredientModel> ingredients = new ArrayList<>();
 
     /*Selam, bu haliyle pushluyorum. Üstteki satır OutOfMemory hatası veriyor. Çok anlayamadım, mantıksal bir hata yapıyorum sanırım.
     Hem böylece bir bugfix de yapmış oluruz. Sevgiler, Umut.
@@ -26,7 +31,15 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
         ListView ingredientsList = findViewById(R.id.ingredientsMultiList);
+
+
+
+        ingredients.add(new CustomIngredientModel("Cucumber",true,5));
+        ingredients.add(new CustomIngredientModel("Eggplant",true,5));
+
+
         CustomIngredientAdaptor ingredientsAdaptor;
         ingredientsAdaptor = new CustomIngredientAdaptor(this,ingredients);
         ingredientsList.setAdapter(ingredientsAdaptor);

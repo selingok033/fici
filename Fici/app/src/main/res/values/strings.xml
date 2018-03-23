@@ -15,6 +15,7 @@
         <item>Fish</item>
         <item>Steak</item>
     </string-array>
+
     <string-array name="equipment">
         <item>Oven</item>
         <item>Bonfire</item>

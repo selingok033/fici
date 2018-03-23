@@ -44,6 +44,7 @@ public class CustomIngredientAdaptor extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         View lineView;
         lineView = ingredientsInflater.inflate(R.layout.customingredientsrow,null);
+
         TextView ingredientText = lineView.findViewById(R.id.rowingredientname);
         CheckBox ingredientExists = lineView.findViewById(R.id.rowingredientexists);
         EditText ingredientAmount = lineView.findViewById(R.id.rowingredientamount);

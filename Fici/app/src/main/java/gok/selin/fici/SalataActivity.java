@@ -1,6 +1,7 @@
 package gok.selin.fici;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -222,7 +223,14 @@ public class SalataActivity extends AppCompatActivity {
         lvSalatalar.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                TarifModel tarif = tarifListesi.get(position);
+                Intent intent = new Intent(getApplicationContext(),DetaylarActivity.class);
+                intent.putExtra("tarif",tarif.getTarifAdi());
+                intent.putExtra("yas",tarif.getKisiSayisi());
+                intent.putExtra("detay",tarif.getMalzemeler()+"\n"+tarif.getYapilisi());
+                intent.putExtra("sure",tarif.getHazirlamaSuresi());
+                intent.putExtra("resim",tarif.getLogoId());
+                startActivity(intent);
             }
         });
 

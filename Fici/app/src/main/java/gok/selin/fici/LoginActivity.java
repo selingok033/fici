@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 username = name.getText().toString();
                 userpass = pass.getText().toString();
-                Toast.makeText(getApplicationContext(),"Name: "+username+" Pass: "+userpass,Toast.LENGTH_LONG).show();
+//                Toast.makeText(getApplicationContext(),"Name: "+username+" Pass: "+userpass,Toast.LENGTH_LONG).show();
 
                 if(username.equals("admin") && userpass.equals("root"))
                 {

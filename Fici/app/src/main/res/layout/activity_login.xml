@@ -40,7 +40,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPersonName" />
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/buttonGiris"
@@ -51,7 +51,7 @@
         android:layout_below="@+id/editTextPass"
         android:layout_marginTop="18dp"
         android:background="@android:color/darker_gray"
-        android:text="Login"
+        android:text="Logın"
         android:textColorLink="@android:color/darker_gray" />
 
     <Button
