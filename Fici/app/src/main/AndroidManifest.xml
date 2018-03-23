@@ -22,6 +22,9 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".CorbalarActivity" />
         <activity android:name=".EtActivity" />
+        <activity android:name=".SalataActivity" />
+        <activity android:name=".TavukActivity" />
+        <activity android:name=".SebzeActivity" />
         <activity android:name=".TatliActivity"></activity>
     </application>
 

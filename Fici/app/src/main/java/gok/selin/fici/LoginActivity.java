@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(username.equals("admin") && userpass.equals("root"))
                 {
-                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                    Intent intent = new Intent(getApplicationContext(),CategoriesActivity.class);
                     intent.putExtra("USERNAME",username);
                     startActivity(intent);
                 }

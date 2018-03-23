@@ -1,6 +1,6 @@
 package gok.selin.fici;
 
-import android.content.Intent;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -70,7 +70,76 @@ public class CorbalarActivity extends AppCompatActivity {
                 R.drawable.ezogelin));
 
         // TODO: 11.03.2018 Daha fazla tarif eklenebilir.
-        
+
+        tarifListesi.add(new TarifModel("Soğan Çorbası","55 dk",4,"5 adet\n" +
+                "orta boy kuru soğan\n" +
+                "2 diş\n" +
+                "sarımsak\n" +
+                "50 gram\n" +
+                "tereyağı\n" +
+                "1 yemek kaşığı\n" +
+                "zeytinyağı\n" +
+                "2 yemek kaşığı\n" +
+                "un\n" +
+                "6 su bardağı\n" +
+                "sıcak et suyu\n" +
+                "1 adet\n" +
+                "defne yaprağı\n" +
+                "1 dal\n" +
+                "taze kekik\n","Çorbanın ana malzemesi olan kuru soğanları yarım ay şeklinde doğrayın. Sarımsakları küçük küpler halinde kesin.\n" +
+                "Tereyağı ve zeytinyağını geniş bir tencerede kızdırın. Yarım ay şeklinde doğranmış kuru soğan, sarımsak, defne yaprağı ve taze kekiği katıp kısık ateşte soteleme işlemine başlayın.\n" +
+                "Hafif hafif renk almaya başlayan kuru soğanları kısık ateşte, 25-30 dakika kadar soteleyin.\n" +
+                "Soğanlar iyice yumuşadığında ateşi biraz yükseltip 5 dakika daha pişirerek renk almalarını kolaylaştırın. Aromalarını bırakan defne yaprağı ve taze kekiği tencereden çıkartın.",R.drawable.sogan));
+
+        tarifListesi.add(new TarifModel("Brokoli Çorbası","25 dk",4,"yarım su bardağı pirinç\n" +
+                "4.5 su bardağı su\n" +
+                "2 su bardağı yoğurt\n" +
+                "1 silme yemek kaşığı un\n" +
+                "1 adet yumurta\n" +
+                "1 yemek kaşığı tereyağı\n" +
+                "nane","Pirinci 3 su bardağı soğuk suda haşlayın. Yoğurdu bir kaba alıp, 1 su bardağı su ile iyice çırpıp, yumurtayı ve unu ilave ederek çırpmaya devam edin. Haşlanmış pirince yarım su bardağı soğuk suyu ilave edin ve yoğurtlu karışımı birden döküp, karıştırın. Kıvamı koyu olursa biraz ılık su ilave edip, 5 dakika kaynatın. Ocağın altını kapatıp, tavada tereyağını eritip, naneyi kavurun. Çorbayı servis kaselerine aldıktan sonra kavrulmuş naneyi üzerinde gezdirip, sıcak servis yapın.",
+                R.drawable.corbabrokoli));
+
+        tarifListesi.add(new TarifModel("Mısır Çorbası","45 dk",6,"1 su bardağı kırmızı mercimek\n" +
+                "1 tatlı kaşığı pirinç\n" +
+                "1 tatlı kaşığı bulgur\n" +
+                "2 çay kaşığı pul biber\n" +
+                "1 yemek kaşığı nane\n" +
+                "2 diş sarımsak\n" +
+                "1 orta boy soğan\n" +
+                "1 yemek kaşığı biber salçası\n" +
+                "1 yemek kaşığı tuz\n" +
+                "1 yemek kaşığı tereyağı\n" +
+                "2 litreye yakın sıcak su","Ezogelin çorbası yapmak için düdüklü tencerede önce rendelemiş olduğumuz soğanı ve ezmiş olduğumuz sarımsağı tereyağında kavuruyoruz. Soğanlar diriliğini kaybetsin yeterli yakmadan orta ateşte kavuralım.\n" +
+                "Soğanlar kavrulunca naneyi, kırmızı biberi ve salçayı ilave edip. Kavurmaya devam edelim.\n" +
+                "Bir iki karıştırdıktan sonra yıkadığımız mercimeği, pirinci, bulguru ve tuzunu da ilave ederek karıştıralım.\n" +
+                "Başka bir tarafta kaynamakta olan 2 litreye yakın suyu üzerine boşaltalım.\n" +
+                "Düdüklünün kapağını ve düdüğünü kapattıktan sonra 10 dakika pişiriyoruz. Normal tencerede de yapabilirsiniz ama biraz daha geç pişecektir (yaklaşık 30-40 dakika sürecektir).",
+                R.drawable.misircorba));
+
+        // TODO: 11.03.2018 Daha fazla tarif eklenebilir.
+
+        tarifListesi.add(new TarifModel("Tavuk Çorbası","55 dk",4,"5 adet\n" +
+                "orta boy kuru soğan\n" +
+                "2 diş\n" +
+                "sarımsak\n" +
+                "50 gram\n" +
+                "tereyağı\n" +
+                "1 yemek kaşığı\n" +
+                "zeytinyağı\n" +
+                "2 yemek kaşığı\n" +
+                "un\n" +
+                "6 su bardağı\n" +
+                "sıcak et suyu\n" +
+                "1 adet\n" +
+                "defne yaprağı\n" +
+                "1 dal\n" +
+                "taze kekik\n","Çorbanın ana malzemesi olan kuru soğanları yarım ay şeklinde doğrayın. Sarımsakları küçük küpler halinde kesin.\n" +
+                "Tereyağı ve zeytinyağını geniş bir tencerede kızdırın. Yarım ay şeklinde doğranmış kuru soğan, sarımsak, defne yaprağı ve taze kekiği katıp kısık ateşte soteleme işlemine başlayın.\n" +
+                "Hafif hafif renk almaya başlayan kuru soğanları kısık ateşte, 25-30 dakika kadar soteleyin.\n" +
+                "Soğanlar iyice yumuşadığında ateşi biraz yükseltip 5 dakika daha pişirerek renk almalarını kolaylaştırın. Aromalarını bırakan defne yaprağı ve taze kekiği tencereden çıkartın.",R.drawable.tavukcorba));
+
+
         CustomAdaptor adaptor = new CustomAdaptor(this,tarifListesi);
         lvCorbalar.setAdapter(adaptor);
 

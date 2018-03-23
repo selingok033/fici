@@ -1,9 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="gok.selin.fici.CategoriesActivity">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="gok.selin.fici.CategoriesActivity">
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/salata"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:src="@drawable/salata" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:src="@drawable/et"
+        android:id="@+id/appCompatImageView" />
+
+    <Button
+        android:id="@+id/buttonsalata"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/salata"
+        android:layout_alignLeft="@+id/salata"
+        android:layout_alignRight="@+id/salata"
+        android:layout_alignStart="@+id/salata"
+        android:layout_below="@+id/salata"
+        android:background="#599A5344"
+        android:text="Salata tarifleri" />
+
+    <Button
+        android:id="@+id/buttonet"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#599A5344"
+        android:layout_alignEnd="@+id/appCompatImageView"
+        android:layout_alignLeft="@+id/appCompatImageView"
+        android:layout_alignRight="@+id/appCompatImageView"
+        android:layout_alignStart="@+id/appCompatImageView"
+        android:layout_alignTop="@+id/buttonsalata"
+        android:text="Et yemekleri" />
+
+
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView2"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/buttonsalata"
+        android:layout_alignStart="@+id/buttonsalata"
+        android:layout_below="@+id/buttonsalata"
+        android:src="@drawable/tavuk" />
+
+    <Button
+        android:id="@+id/buttontavuk"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#599A5344"
+        android:layout_alignEnd="@+id/appCompatImageView2"
+        android:layout_alignLeft="@+id/appCompatImageView2"
+        android:layout_alignRight="@+id/appCompatImageView2"
+        android:layout_alignStart="@+id/appCompatImageView2"
+        android:layout_below="@+id/appCompatImageView2"
+        android:text="Tavuk yemekleri" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/buttonet"
+        android:layout_alignStart="@+id/buttonet"
+        android:layout_alignTop="@+id/appCompatImageView2"
+        android:src="@drawable/sebze"
+        android:id="@+id/appCompatImageView3" />
+
+    <Button
+        android:id="@+id/buttonsebze"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#599A5344"
+        android:layout_alignEnd="@+id/appCompatImageView3"
+        android:layout_alignLeft="@+id/appCompatImageView3"
+        android:layout_alignRight="@+id/appCompatImageView3"
+        android:layout_alignStart="@+id/appCompatImageView3"
+        android:layout_below="@+id/appCompatImageView3"
+        android:text="Sebze yemekleri" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView4"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/appCompatImageView6"
+        android:layout_alignLeft="@+id/buttontavuk"
+        android:layout_alignStart="@+id/buttontavuk"
+        android:src="@drawable/corba" />
+
+    <Button
+        android:id="@+id/buttonCorba"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#599A5344"
+        android:layout_alignEnd="@+id/appCompatImageView4"
+        android:layout_alignLeft="@+id/appCompatImageView4"
+        android:layout_alignRight="@+id/appCompatImageView4"
+        android:layout_alignStart="@+id/appCompatImageView4"
+        android:layout_below="@+id/appCompatImageView4"
+        android:layout_marginTop="12dp"
+        android:text="Çorba tarifleri" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView6"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_alignLeft="@+id/buttonsebze"
+        android:layout_alignStart="@+id/buttonsebze"
+        android:layout_below="@+id/buttonsebze"
+        android:src="@drawable/tat" />
+
+    <Button
+        android:id="@+id/buttontat"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#599A5344"
+        android:layout_alignBottom="@+id/buttonCorba"
+        android:layout_alignEnd="@+id/appCompatImageView6"
+        android:layout_alignLeft="@+id/appCompatImageView6"
+        android:layout_alignRight="@+id/appCompatImageView6"
+        android:layout_alignStart="@+id/appCompatImageView6"
+        android:text="Tatlı tarifleri" />
+
 
 </RelativeLayout>
